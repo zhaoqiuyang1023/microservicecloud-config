@@ -3,6 +3,8 @@ spring:
         active:
            - dev
 ---
+server:
+  port: 1002
 spring:
     profiles: dev
 eureka:
@@ -10,6 +12,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:1111/eureka/
 ---
+server:
+  port: 1002
 spring:
     profiles: test
 eureka:
