@@ -5,8 +5,10 @@ spring:
 ---
 spring:
     profiles: dev
-    application:
-        name: microservicecloud-config-XXX-dev
+    eureka:
+     client:
+      serviceUrl:
+       defaultZone=http://localhost:1111/eureka/
 ---
 spring:
     profiles: test
